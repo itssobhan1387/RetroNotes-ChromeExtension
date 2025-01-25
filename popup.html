@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retro Notes</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      width: 350px;
+      height: 200px;
+      font-family: 'Courier New', monospace;
+      background: linear-gradient(145deg, #2c3e50, #34495e);
+      color: #ecf0f1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      text-shadow: 2px 2px #000;
+    }
+
+    .note-container {
+      width: 100%;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .note {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #3a506b;
+      padding: 10px 15px;
+      border-radius: 8px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+      color: #ecf0f1;
+      font-size: 1rem;
+    }
+
+    .delete-btn {
+      background: none;
+      border: none;
+      color: #e74c3c;
+      font-size: 1.2rem;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .delete-btn:hover {
+      color: #c0392b;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #61dafb;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: #2c3e50;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #21a1f1;
+    }
+    input{
+      user-select: none;
+    }
+    button{
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Retro Notes</h1>
+  <div class="note-container" id="note-container">
+  </div>
+  <button id="add-note">Add Note</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
