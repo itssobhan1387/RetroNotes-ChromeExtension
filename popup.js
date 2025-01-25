@@ -168,9 +168,4 @@ function createNote() {
   note.appendChild(resizeHandle);
   document.body.appendChild(note);
 
-  noteContent.addEventListener("keydown", (e) => {
-    if (e.key === "Backspace" && noteContent.textContent.length <= 1) {
-      e.preventDefault();
-    }
-  });
 }
